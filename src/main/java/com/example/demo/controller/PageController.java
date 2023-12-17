@@ -51,11 +51,11 @@ public class PageController {
 	}
 	
 	@GetMapping("/purchase")
-	public ModelAndView purchase() {
+	public ModelAndView purchase(@RequestParam Integer id) {
 		
 		ModelAndView model = new ModelAndView("./pages/purchase.html");
 		
-		model.addObject("trip",repository.getById(1));
+		model.addObject("trip",repository.getById(id));
 		
 		return model;
 	}
