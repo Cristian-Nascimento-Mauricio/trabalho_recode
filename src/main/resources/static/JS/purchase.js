@@ -1,15 +1,19 @@
 
-const button = document.getElementById('button')
+const button = document.querySelector('#button')
 
-button.addEventListener('click',()=>{
+console.log('Okay')
+
+button.addEventListener("click",()=>{
 	
-	console.log('Okay')
+	console.log("Okay")
 	
+	/*
 	fetch('/api/purchase',{
 		method:'POST',
 		body:{
 			
 		}
-	})
+	})*/
 	
 })
+
